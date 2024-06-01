@@ -1,0 +1,19 @@
+{
+  "name": "tesseract-master",
+  "version": "1.0.0",
+  "description": "From image to text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "text"
+  ],
+  "author": "sammi",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/translate": "^8.3.0",
+    "tesseract.js": "^5.1.0"
+  }
+}
