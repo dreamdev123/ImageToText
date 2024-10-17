@@ -20,6 +20,8 @@
 
 /.idea
 /.vscode
+/output
+/task
 
 /src/styles/tailwind.css
 
