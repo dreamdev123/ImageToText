@@ -1,5 +1,5 @@
 # Extract Text from images using Tesseract OCR and then translate to other language by using @google-cloud/translate
-We often find ourselves needing to copy content from a PDF that we cannot edit or copy content from. At this time, you can use this program.
+We often find ourselves needing to copy content from a Image that we cannot edit or copy content from. At this time, you can use this program.
 
 ## Requirements
 - Tesseract OCR: You need to have Tesseract OCR installed on your system. You can download it from the official GitHub repository: [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).
@@ -8,6 +8,7 @@ We often find ourselves needing to copy content from a PDF that we cannot edit o
 1. Convert image to text
 2. Modify text to complete sentences and fix error sentence.
 3. Trnaslate completed sentences.
+4. Write text in docx.
 ```
 
 ## Future explorations

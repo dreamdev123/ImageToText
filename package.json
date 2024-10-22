@@ -14,6 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/translate": "^8.3.0",
-    "tesseract.js": "^5.1.0"
+    "docx": "^9.0.2",
+    "easy-template-x": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "mammoth": "^1.8.0",
+    "officegen": "^0.6.5",
+    "pdf-lib": "^1.17.1",
+    "tesseract.js": "^5.1.1"
   }
 }

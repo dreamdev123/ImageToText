@@ -16,4 +16,4 @@ const recognizeTextFromImage = async (imagePath, target) => {
   }
 };
 
-module.exports = recognizeTextFromImage;
+module.exports = { recognizeTextFromImage };
