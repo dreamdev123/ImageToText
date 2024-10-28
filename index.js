@@ -1,7 +1,6 @@
 const Tesseract = require("tesseract.js");
 const path = require("path");
 const { TemplateHandler } = require('easy-template-x');
-const docx = require('docx');
 const fs = require('fs')
 // Path to the image
 const imagePath = "./task/";
@@ -19,9 +18,9 @@ fs.readdir(imagePath, async (err, files) => {
             "eng" // Language, 'eng' for English
         )
             .then(async ({ data: { text } }) => {
+                // First read template docx
                 const templateFile = fs.readFileSync('myTemplate.docx');
 
-                // 2. process the template
                 const data = {
                     posts: [
                         { text: text },
@@ -29,9 +28,9 @@ fs.readdir(imagePath, async (err, files) => {
                 };
 
                 const handler = new TemplateHandler();
+                // Make docx by using tempate
                 const doc = await handler.process(templateFile, data);
-
-                // 3. save output
+                // Write file
                await fs.writeFileSync(path.join(filePath, files[i] + '.docx'), doc);
             })
             .catch((error) => {
